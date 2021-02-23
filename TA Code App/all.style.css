@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: #1e1f26;
+}
+.js {
+  height: 334px;
+  width: 32vw;
+  position: absolute;
+  top:39px;
+  left: 64.5vw;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  overflow: hidden;
+  font-family: nav;
+  border-bottom-right-radius: 30px;
+}
+.css {
+  height: 334px;
+  width: 29vw;
+  position: absolute;
+  top:39px;
+  left: 35.5vw;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  overflow-x: hidden;
+  font-family: nav;
+}
+.html {
+  height: 334px;
+  width: 32vw;
+  position: absolute;
+  top:39px;
+  left:3.5vw;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  overflow: hidden;
+  font-family: nav;
+  border-bottom-left-radius: 30px;
+}
+.output {
+  height: 266.8px;
+  width:  70.35vw;
+  position: absolute;
+  top: 387px;
+  left: 2%;
+  right: 0;
+  bottom: 0;
+  background-color: #353b48;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: solid 8px #2f3640 ;
+  color: white;
+  box-shadow: -11px 0px 20px black;
+}
+.console {
+  height: 266.8px;
+  width: 25vw;
+  position: absolute;
+  top: 387px;
+  left: 72.3vw;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-right: solid 8px #2f3640 ;
+  border-top: solid 8px #2f3640 ;
+  border-bottom: solid 8px #2f3640 ;
+  color: white;
+  box-shadow: 11px 0 20px black;
+}
+.nav {
+  color: #aaaea5;
+  font-size: 17px;
+  display: grid;
+  grid-template-columns: 47.5vw 25vw 0vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  top:13.34px;
+  width: 94vw;
+  background: #353b48;
+  height: 365px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px black;
+}
+.h {
+  margin-left: 15.5vw;
+}
+.h,
+.c,
+.j {
+  margin-top: 1px;
+  height: 23px;
+}
+@font-face {
+  font-family: nav;
+  src: url(/OPERATORMONO-LIGHTITALIC.OTF);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0;
+  display: none;
+}
+.play{
+  position: absolute;
+  height: 20px;
+  top: 17px;
+  left: 90.3vw;
+  z-index: 10000;
+  cursor: pointer;
+}
+.cross{
+  position: absolute;
+  height: 20px;
+  top: 17px;
+  left: 92.3vw;
+  z-index: 10000;
+  cursor: pointer;
+}
+.alert{
+  position: absolute;
+  height: 200.1px;
+  width: 30vw;
+  background-color: #999999;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.ok,.ok1{
+  position: absolute;
+  height: 5vh;
+  width: 8vw;
+  background-color: white;
+  z-index: 100;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%);
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.ok p,.ok1 p{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.ok:hover,.ok1:hover{
+  background-color: #ff8a69;
+}
+.alertext{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.ace_text-input{
+  width: 30vw;
+}
+
+@media only screen and (max-width:764px) {
+  .play{
+    left: 89vw;
+    height: 14px;
+    top: 20px;
+  }
+  .html,.css{
+    width: 90.2vw;
+    left: 50%;
+    transform: translate(-50%);
+    border: 30px;
+    border-radius: 30px;
+    font-size: 10px;
+  }
+  .js{
+    width: 65vw;
+    left: 37.2%;
+    transform: translate(-50%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 10px;
+  }
+  .js ace_editor ace-monokai ace_dark{
+    width: 65vw;
+  }
+  .html ace_editor ace-monokai ace_dark,.css ace_editor ace-monokai ace_dark{
+    width: 90vw;
+  }
+  .nav{
+    width: 92vw;
+    font-size: 12px;
+    grid-template-columns: 38vw 20vw 0vw;
+  }
+  .h{
+    margin-left: 12.5vw;
+    border-bottom: solid white 2px;
+    width: 13vw;
+  }
+  .j{
+    width: 25vw;
+  }
+  .c{
+    width: 13vw;
+  }
+  .h,.c,.j{
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+  }
+  .console{
+    top: 39px;
+    height: 334px;
+    box-shadow: none;
+    border: none;
+    left: 70vw;
+    width: 25vw;
+  }
+  .output {
+    height: 266.8px;
+    width:  95vw;
+    position: absolute;
+    top: 387px;
+    left: 50%;
+    transform: translate(-50%);
+    right: 0;
+    bottom: 0;
+    background-color: #353b48;
+    border-radius: 30px;
+    border: solid 8px #2f3640 ;
+    color: white;
+    box-shadow: -11px 0px 20px black;
+  }
+  .html{
+    z-index: 1;
+  }
+}
+
+
+@media only screen and (max-width:300px) {
+  .h,.c,.j{
+    font-size: 10px;
+    margin-top: 5px;
+    height: 20px;
+  }
+}

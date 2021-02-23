@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/all.style.css" />
+    <title>TA Code Editor</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h3 class="h">Html</h3>
+      <h3 class="c">Css</h3>
+      <h3 class="j">Javascript</h3>
+    </div>
+    <div class="editors">
+      <div class="html" id="html"></div>
+      <div class="css" id="css"></div>
+      <div class="js" id="js"></div>
+      </div>
+    </div>
+    <iframe class="output" frameborder="0"></iframe>
+    <iframe class="console" frameborder="0"></iframe>
+    
+    <div class="alert">
+      <p class="alertext"></p>
+      <div class="ok">
+        <p>OK</p>
+      </div>
+    </div>
+
+
+    <div class="line"></div>
+    <img src="play.svg" class="play">
+
+    <script src="/src-min/ace.js"></script>
+    <script src="/src-min/mode-javascript.js"></script>
+    <script src="/src-min/ext-language_tools.js"></script>
+    <script src="/script.functionality.js"></script>
+    <script src="/not_realtime_all/script.main.js"></script>
+  </body>
+</html>
